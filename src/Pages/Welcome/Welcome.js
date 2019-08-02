@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Background from './welcome_page_pic.jpg';
+
 import './Welcome.css';
 
 

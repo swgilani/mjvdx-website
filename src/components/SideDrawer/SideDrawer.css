@@ -1,6 +1,6 @@
 .side-drawer {
     height: 100%;
-    background: grey;
+    background: white;
     box-shadow: 2px 0px 8px rgba(0,0,0,0.5);
     position: fixed;
     top:0;
@@ -46,3 +46,6 @@
 }
 
 
+.fonts1 {
+    font-family: 'Titillium Web', sans-serif;
+}

@@ -12,16 +12,16 @@ if (props.show){
     return (
 <nav className = {drawerClasses}>
 
-<ul>
+<ul className="fonts1">
     
-    <li> <a href="/">Landscapes</a> </li>
-    <li><a href="/">Portraits</a>   </li>
-    <li><a href="/">Weddings</a>  </li> 
-    <li><a href="/">Events</a>  </li> 
-    <li><a href="/">The Experience</a></li>
-    <li><a href="/">Packages</a></li>
-    <li> <a href="/">About me</a> </li>    
-    <li> <a href="/">Contact</a> </li>     
+    <li> <a href="/">LANDSCAPES</a> </li>
+    <li><a href="/">PORTRAITS</a>   </li>
+    <li><a href="/">WEDDINGS</a>  </li> 
+    <li><a href="/">EVENTS</a>  </li> 
+    <li><a href="/">THE EXPERIENCE</a></li>
+    <li><a href="/">PACKAGES</a></li>
+    <li> <a href="/">ABOUT ME</a> </li>    
+    <li> <a href="/">CONTACT</a> </li>     
     
 </ul>
 

@@ -1,18 +1,37 @@
 .toolbar {
     width:100%;
-    position:fixed;
-    background:lightgray;
-    height: 56px;
+    position: absolute;
+    background:white;
+    height: 44px;
     top: 0;
     left: 0;
+  
+   border: 2px #caffe7 solid;
+   padding: 8px; 
+  
+    
 }
 
+.border {
+    border: 2px #caffe7 solid;
+    padding: 8px; 
+}
+
+.fonts1 {
+    font-family: 'Titillium Web', sans-serif;
+}
 
 .toolbar_logo a {
 
     color: black;
     text-decoration: none;
     font-size: 4rem;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    top: 5px;
+
+
+   
 }
 
 
@@ -35,7 +54,7 @@
 
 .toolbar_navigation-items1 a:hover,
 .toolbar_navigation-items1 a:active {
-    color: cyan;
+    color: #105e41;
 }
 
 .toolbar_navigation-items1 ul {
@@ -57,7 +76,7 @@
 
 .toolbar_navigation-items2 a:hover,
 .toolbar_navigation-items2 a:active {
-    color: cyan;
+    color:#105e41;
 }
 
 .toolbar_navigation-items2 ul {
@@ -75,7 +94,7 @@
     flex: 1;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1400px){
     .toolbar_navigation-items1 {
         display:none;
     }
@@ -84,7 +103,7 @@
     }
 }
 
-@media (min-width: 769px){
+@media (min-width: 1400px){
     .toolbar__toggle-button {
         display: none;
     }

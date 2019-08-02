@@ -1,0 +1,58 @@
+.flext {
+    display: flex;
+   flex-direction: row;
+   
+}
+
+.intro-box1 {
+flex: 2;
+
+
+
+}
+
+.intro-box2 {
+flex: 3;
+margin:0 30px;
+align-content: center;
+
+
+}
+
+.muneebSize {
+    width: 300px;
+    height: auto;
+}
+
+
+@media(max-width:768px) {
+
+    .flext {
+        display: flex;
+       flex-direction: column;
+       
+    }
+
+    .muneebSize {
+        width: 450px;
+        height: auto;
+    }
+
+    .intro-box1 {
+        flex: 1;
+        
+        }
+        
+        .intro-box2 {
+        flex: 1;
+        
+        align-content: center;
+        text-align: center;
+        margin-left: 80px;
+        
+        }
+
+
+
+
+}
