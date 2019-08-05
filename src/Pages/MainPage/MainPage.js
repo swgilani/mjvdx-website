@@ -5,6 +5,7 @@ import Backdrop from '../../components/Backdrop/Backdrop'
 import Carousel5 from '../../components/Carousel/Carousel'
 import Introduction from '../../components/Introduction/Introduction'
 import Parallax from '../../components/Parallax/Parallax'
+import PhotosGrid from '../../components/PhotosGrid/PhotosGrid'
 
 import './MainPage.css';
 
@@ -71,6 +72,11 @@ class MainPage extends Component {
         </div>
        
       <Parallax />
+
+
+<br/>
+<PhotosGrid />
+
 
       </div>
       

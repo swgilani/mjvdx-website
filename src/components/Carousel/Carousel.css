@@ -5,3 +5,6 @@
     
 }
 
+.hideOverflow {
+    overflow-x: hidden;
+}

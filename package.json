@@ -14,10 +14,11 @@
     "react-flickity-component": "^3.3.0",
     "react-headroom": "^2.2.8",
     "react-lazy-hero": "^2.0.0",
+    "react-photo-gallery": "^8.0.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.0.1",
+    "react-stack-grid": "^0.7.1",
     "styled-components": "^4.3.2"
-    
   },
   "scripts": {
     "start": "react-scripts start",

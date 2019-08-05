@@ -1,4 +1,11 @@
-img.hello {
-width: auto;
-height: 50vh;
+.hello{
+    overflow-x:  hidden;
+    font-family: 'Titillium Web', sans-serif;
+    }
+
+h1 {
+    color: black;
+}
+.imageSrc {
+margin-bottom: 100px;
 }
