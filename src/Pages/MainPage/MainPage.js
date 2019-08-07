@@ -50,13 +50,10 @@ class MainPage extends Component {
 
     
      
-        <br/>
-        <br/>
-        <br/>
         
 
-        <Carousel5 /> 
        
+<Carousel5 />  
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} /> 
                    
         <SideDrawer show={this.state.sideDrawerOpen} />
@@ -66,8 +63,7 @@ class MainPage extends Component {
 <br/>
       <div className="flexCenter">
 
-        <Introduction />
-        <br/>
+       
         
         </div>
        

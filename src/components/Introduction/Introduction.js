@@ -13,9 +13,9 @@ const introduction = props => (
        </div>
        
        <div className="intro-box2">
-              <h3>Hi, I'm Muneeb!</h3>
-              <p>I am a photographer based in Toronto</p>
-              <p>I’ve made it my life’s mission to capture my client’s most special and beautiful moments in the form an image, an everlasting memory that they can cherish forever.</p>
+              <h1 className="coloredLol">Hi, I'm Muneeb!</h1>
+              <h2 className="coloredLol">I am a photographer based in Toronto, Canada</h2>
+            <button>Get to know me more!</button>
        </div>
 
 

@@ -2,14 +2,16 @@
     display: flex;
    flex-direction: row;
    font-family: 'Titillium Web', sans-serif;
+   color: white;
    
 }
 
 .intro-box1 {
 flex: 2;
+}
 
-
-
+.coloredLol {
+    color: white;
 }
 
 
@@ -18,6 +20,7 @@ flex: 2;
 flex: 3;
 margin:0 30px;
 align-content: center;
+color: white;
 
 
 }
@@ -30,34 +33,8 @@ align-content: center;
 }
 
 
-@media(max-width:768px) {
-
-    .flext {
-        display: flex;
-       flex-direction: column;
-       
-    }
-
-    .muneebSize {
-        width: 450px;
-        height: auto;
-    }
-
-    .intro-box1 {
-        flex: 1;
-        
-        }
-        
-        .intro-box2 {
-        flex: 1;
-        
-        align-content: center;
-        text-align: center;
-        margin-left: 80px;
-        
-        }
 
 
 
 
-}
+
