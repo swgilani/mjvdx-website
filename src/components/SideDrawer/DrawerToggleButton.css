@@ -17,6 +17,12 @@
 
 .toggle-button__line {
     width:30px;
-    height: 2px;
-    background: black;
+    height: 3px;
+    background: #37c8c6;
+    
+}
+
+.toggle-button__line:hover {
+    
+   background: #2acad5;
 }
