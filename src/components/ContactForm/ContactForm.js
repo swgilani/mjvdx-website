@@ -91,7 +91,7 @@ subject: this.state.subject,
 message_html: this.state.message
 }
 
-emailjs.send('gmail', 'template_BKUDkziq', templateParams)
+emailjs.send('gmail', 'template_BKUDkziq', templateParams,'user_ZgNbNb8RMSxxC4PudCNqT')
 .then(function (response) {
     toastr.success('Message sent successfully')
     console.log('SUCCESS!', response.status, response.text)
@@ -169,7 +169,8 @@ return (
     error={this.state.errors.message}
     />
     <Button
-     type='button'
+    onClick={this.sentMessage.bind(this)}
+    type='button'
     name='submit'
     className='btn-btn-primary btn-lg'
     required='required' 
