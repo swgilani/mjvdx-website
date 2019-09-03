@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useCallback, Component } from "react";
 import { render } from "react-dom";
 import Gallery from "react-photo-gallery";
 import { photos } from "./photos";
@@ -9,20 +9,45 @@ import Image4 from '../../assets/images/saima_-3.jpg';
 import Image5 from '../../assets/images/saima_-4.jpg';
 import Image6 from '../../assets/images/saima_-5.jpg';
 import './PhotosGrid.css'
+import Carousel, { Modal, ModalGateway } from "react-images";
 
 
-const PhotoGrid = props => (
 
-<div className="middlePhotos">
-    
-    <Gallery photos={photos} />
+function PhotosGrid() {
+    const [currentImage, setCurrentImage] = useState(0);
+    const [viewerIsOpen, setViewerIsOpen] = useState(false);
+  
+    const openLightbox = useCallback((event, { photo, index }) => {
+      setCurrentImage(index);
+      setViewerIsOpen(true);
+    }, []);
+  
+    const closeLightbox = () => {
+      setCurrentImage(0);
+      setViewerIsOpen(false);
+    };
+  
+    return (
+      <div className="middlePhotos">
+        <Gallery photos={photos} onClick={openLightbox} className="photohover" />
+        <ModalGateway>
+          {viewerIsOpen ? (
+            <Modal onClose={closeLightbox}>
+              <Carousel
+                currentIndex={currentImage}
+                views={photos.map(x => ({
+                  ...x,
+                  srcset: x.srcSet,
+                  caption: x.title
+                }))}
+              />
+            </Modal>
+          ) : null}
+        </ModalGateway>
+      </div>
+    );
+  }
+    export default PhotosGrid;
  
-    </div>
-    
  
- 
- );
- 
- export default PhotoGrid;
-
 

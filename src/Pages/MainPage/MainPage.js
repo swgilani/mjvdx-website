@@ -6,8 +6,11 @@ import Carousel5 from '../../components/Carousel/Carousel'
 import Introduction from '../../components/Introduction/Introduction'
 import Parallax from '../../components/Parallax/Parallax'
 import PhotosGrid from '../../components/PhotosGrid/PhotosGrid'
+import ContactForm from '../../components/ContactForm/ContactForm'
+import ScrollUp from '../../components/Scrollup/Scrollup'
 
 import './MainPage.css';
+import Footer from '../../components/Footer/Footer';
 
 
 
@@ -23,8 +26,12 @@ class MainPage extends Component {
 
 
   componentDidMount(){
-    document.body.backgroundColor = null;
+    document.body.classList.add("MainPage");
 
+}
+
+componentWillUnmount() {
+  document.body.classList.remove("MainPage");
 }
 
   drawerToggleClickHandler = () => {
@@ -39,6 +46,8 @@ class MainPage extends Component {
 
   render() {
     
+   
+
     let backdrop;
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
@@ -46,9 +55,9 @@ class MainPage extends Component {
 
     
     return (
-      <div classname='MainPage'style={{height: '100%'}}>
+      <div classname="MainPage" style={{height: '100%'}}>
 
-    
+<ScrollUp/>
      
         
 
@@ -73,6 +82,9 @@ class MainPage extends Component {
 <br/>
 <PhotosGrid />
 
+<br/>
+<ContactForm id='main-contact-form' className='contact-form' name='contact-form' method='post' action='' />
+<Footer />
 
       </div>
       

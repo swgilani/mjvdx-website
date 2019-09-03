@@ -1,0 +1,52 @@
+.footerContainer {
+    padding-top : 40px;
+    padding-bottom: 40px;
+    border-bottom: 5px solid #16a085;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+
+.footerContainer p {
+    color: white;
+}
+
+.footerContainer2 {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footerGrid {
+    display: flex;
+   flex-direction: row;
+
+}
+
+.spacingp {
+   flex: 5;
+  
+}
+
+
+
+.spacingp2 {
+ 
+    flex: 5;
+
+}
+
+.spacingIcons {
+    margin: 4px;
+    color: white;
+}
+
+
+
+
+@media(min-width: 500px){
+    .toggleIcons {
+        display: none;
+    }
+
+   
+}
+

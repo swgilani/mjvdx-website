@@ -6,7 +6,7 @@ class TextArea extends Component {
     render() {
         return (
             <div className='form-group'>
-            <label htmlFor={this.props.name}>{this.props.name} *</label>
+            <label htmlFor={this.props.name}></label>
             <textarea name={this.props.name}
             id={this.props.id}
             required={this.props.required}
@@ -14,6 +14,7 @@ class TextArea extends Component {
             rows={this.props.rows}
             onChange={this.props.onChange}
             value={this.props.value}
+            placeholder={this.props.placeholder}
             />
             <span className='error'>{this.props.error}</span>
 

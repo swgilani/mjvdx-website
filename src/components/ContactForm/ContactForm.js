@@ -5,7 +5,14 @@ import TextArea from './TextArea'
 import Button from './Button'
 import * as emailjs from 'emailjs-com'
 import 'jquery'
-
+import './ContactForm.css'
+import { ToastProvider, useToasts } from 'react-toast-notifications'
+import backgroundImage from '../../assets/images/cne-wall.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 class ContactForm extends Component {
 
@@ -28,6 +35,8 @@ this.state = {
 }
 
 
+
+
 handleInputChange(event) {
     event.preventDefault()
     const target = event.target
@@ -43,22 +52,22 @@ validateMail() {
     let formIsValid = true
 
     if (!this.state.name || this.state.name.length < 3){
-        errors.name = 'minimum 3 chars pls'
+        errors.name = 'Invalid name'
         formIsValid = false
     }
 
     if (!this.state.subject || this.state.subject.length < 3){
-        errors.subject = 'minimum 3 chars pls'
+        errors.subject = 'Invalid subject'
         formIsValid = false
     }
 
     if (!this.state.message || this.state.message.length < 10){
-        errors.message = 'minimum 10 charspls'
+        errors.message = 'Message too short'
         formIsValid = false
     }
 
     if (!this.state.email || this.state.email.length < 3){
-        errors.email = 'minimum 3 chars pls'
+        errors.email = 'Invalid email'
         formIsValid = false
     }
 
@@ -66,7 +75,7 @@ validateMail() {
 
 
     if (!pattern.test(this.state.email)) {
-        errors.email = 'this is not a valid email'
+        errors.email = 'Invalid email'
         formIsValid = false
     }
 
@@ -84,6 +93,24 @@ sentMessage (event) {
         return
     }
 
+    toastr.options = {
+        "closeButton": true,
+        "debug": true,
+        "newestOnTop": false,
+        "progressBar": true,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+      }
+
 var templateParams = {
 from_name: this.state.name + '(' + this.state.email + ')',
 to_name: 'iwasiqiqbal@gmail.com',
@@ -91,13 +118,20 @@ subject: this.state.subject,
 message_html: this.state.message
 }
 
+
+
+
+
+
 emailjs.send('gmail', 'template_BKUDkziq', templateParams,'user_ZgNbNb8RMSxxC4PudCNqT')
 .then(function (response) {
-    toastr.success('Message sent successfully')
+    
+      toastr.success("Message sent Successfully!")
+      
     console.log('SUCCESS!', response.status, response.text)
 }, function (err) {
 
-    toastr.error(err)
+    toastr["error"]("Muneeb will contact you back shortly.", "Message sent successfully!")
     console.log(err)
 })
 
@@ -117,30 +151,59 @@ render () {
 
 return (
 
-    <div>
+    <div className="hero-image">
 
+
+<div className="hero-image-inner">
+
+    <h1 className="contact-textMAIN"> 
+      Contact Me
+        
+    </h1>
+    
+       
+
+
+    <div className="hero-inside flex-direkshan">
+
+    <div className="div1contact">
+        <h1 className="contact-text2">Let's chat!
+         </h1>
+       <a href="#"> <i className="fab fa-instagram fa-5x contact-text2 icon-contact1" > </i></a> 
+       <a href="#"><i className="fab fa-facebook-f fa-5x contact-text2 icon-contact2" > </i></a> 
+        
+    </div>
+
+
+    <div className="div2contact">
 
     <form
+
     id={this.props.id}
     className={this.props.className}
     name={this.props.name}
     method={this.props.method}
     action={this.props.action}
+    
     >
 
     <Input
     type='text'
-    name='name'
+    placeholder="Name"
+     name="name"
     className='form-control'
     required='required' onChange={this.handleInputChange.bind(this)}
     value={this.state.name}
     error={this.state.errors.name}
     />
 
+    
+    
 
       <Input
     type='email'
     name='email'
+    placeholder="Email"
     className='form-control'
     required='required'
     onChange={this.handleInputChange.bind(this)}
@@ -151,15 +214,17 @@ return (
       <Input
     type='text'
     name='subject'
+    placeholder="Subject"
     className='form-control'
     required='required' 
     onChange={this.handleInputChange.bind(this)}
     value={this.state.subject}
     error={this.state.errors.subject}
     />
-
+ 
     <TextArea
     name='message'
+    placeholder="Message"
     id='message'
     className='form-control'
     required='required' 
@@ -168,16 +233,20 @@ return (
     value={this.state.message}
     error={this.state.errors.message}
     />
+     <hr className="bruhhr"/>
     <Button
     onClick={this.sentMessage.bind(this)}
     type='button'
     name='submit'
-    className='btn-btn-primary btn-lg'
+    className='btn-contact'
     required='required' 
     />
 
 
 </form>
+</div>
+</div>
+</div>
 </div>
 
 )

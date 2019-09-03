@@ -14,8 +14,8 @@ const parallax = props => (
    className="picting"
     minHeight="40vh"
     imageSrc={Image1}
-    parallaxOffset="20"
-    opacity="0.3"
+    parallaxOffset="0"
+    opacity="0.2"
    
      >
 

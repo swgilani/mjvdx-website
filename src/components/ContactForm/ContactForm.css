@@ -1,0 +1,255 @@
+.contactbounds {
+
+    height: 400px;
+    width: 100%;
+}
+
+.icon-contact1 {
+  padding-left: 0;
+  size: 6px;
+}
+
+.icon-contact2 {
+  margin-left: 10%;
+}
+
+
+.fa-instagram:hover {
+  color: #C13584 !important;
+  text-shadow:3px 6px black;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+}
+
+.fa-facebook-f:hover {
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  color: #3C5A99;
+  text-shadow:3px 6px black;
+}
+
+.btn-contact {
+    
+   
+    font-family: 'Titillium Web', sans-serif;
+   
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+
+    background-color:transparent; 
+    color: white; 
+    border: 2px solid#37c8c6;
+    padding: 2px 15px;
+}
+.btn-contact:hover {
+    
+        background-color: #37c8c6;
+        color: black;
+      
+}
+
+.form-group {
+    margin-top: 10px;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/cne-wall.jpg");
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 50px;
+  }
+
+  .hero-image-inner {
+ 
+    width: 85%;
+    height: 95%;
+    margin: 0 auto;
+    
+  }
+
+
+
+
+  span {
+      color: #cc0000;
+      font-family: 'Titillium Web', sans-serif;
+        font-size: 10px;
+        margin-bottom: 10px;
+  }
+ 
+
+  .contact-textMAIN{
+    color: white;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2em;
+    margin-top: 0 !important;  
+   
+  }
+
+  .contact-text {
+   color: white;
+   text-align: center;
+   font-family: 'Titillium Web', sans-serif;
+   font-size: 2em;
+  }
+  .contact-text2 {
+    color: white;
+    margin-top: -17px;
+    
+    margin-bottom:50px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 4em;
+   }
+
+  .hero-inside{
+    display:inline-flex;
+    width: 100%;
+    height: 77%;
+    flex-wrap:wrap;
+
+    
+  }
+  .flex-direkshan{
+    flex-direction:row;
+  }
+  .div1contact{
+
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    width: 50%;
+    
+  }
+  
+  .div2contact{
+    
+    width:30%;
+    float: right;
+    
+  }
+  
+  input{
+
+    width: 140%;
+    
+}
+
+textarea {
+    width: 140%;
+}
+  
+  
+  @media(max-width: 500px) {
+    .flex-direkshan{
+    flex-direction:column;
+    }
+  .div1contact{
+    width: 50%;
+    margin: 0 auto;
+    border-right:none;
+    border-bottom:1px solid black;
+    }
+    .div2contact{
+      width:30%;
+      height: 50%;
+      text-align: center;
+        margin-left: 60px;
+     
+    }
+
+    .icon-contact1{
+      display: none !important;
+  
+    }
+    
+
+
+    
+    .icon-contact2{
+      display: none !important;
+    }
+
+    .contact-text2 {
+        color: white;
+        text-align: center;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1em;
+        margin-top: 0;
+    
+      margin-bottom:0;
+       }
+ 
+
+       input{
+
+        width: 250%;
+        
+    }
+    
+    textarea {
+        width: 250%;
+    }
+
+    }
+
+    @media(max-width: 450px) {
+    
+        .div2contact{
+          width:30%;
+          height: 50%;
+          text-align: center;
+            margin-left: 55px;
+         
+        }
+
+    }
+    @media(max-width: 400px) {
+    
+        .div2contact{
+          width:30%;
+          height: 50%;
+          text-align: center;
+            margin-left: 45px;
+         
+        }
+
+    }
+
+    @media(max-width: 345px) {
+    
+        .div2contact{
+          width:30%;
+          height: 50%;
+          text-align: center;
+            margin-left: 35px;
+         
+        }
+
+    }
+
+
+    @media(max-height: 600px){
+      .btn-contact {
+      
+        font-size: 13px;
+        padding: 2px 6px;
+      
+    }
+
+    textarea {
+      height: 90px;
+  }
+    }
