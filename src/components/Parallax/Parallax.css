@@ -6,3 +6,60 @@
 h1 {
     color: black;
 }
+
+
+
+.aboutflexcontainer {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.aboutflexitem1 {
+    flex: 2;
+}
+.aboutflexitem1 img {
+    height: auto;
+    width: 400px;
+}
+
+.aboutflexitem2 {
+    flex: 5;
+    padding-left: 20%;
+    margin-top: 10%;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+
+@media (max-width: 900px){
+    .aboutflexitem2 {
+        
+        padding-left: 5%;
+        padding-top: 5%;
+       
+    
+    }
+}
+
+
+@media (max-width: 710px){
+    .aboutflexcontainer {
+        
+        flex-direction: column;
+    
+    }
+
+
+    .aboutflexitem2 {
+       
+        padding-left: 0%;
+        margin-top: -10%;
+        margin-bottom: -25%;
+    }
+    .aboutflexitem1 img {
+        height: auto;
+        width: 350px;
+    }
+}

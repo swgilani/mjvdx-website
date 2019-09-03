@@ -3,14 +3,15 @@ import Toolbar from '../../components/Toolbar/Toolbar'
 import SideDrawer from '../../components/SideDrawer/SideDrawer'
 import Backdrop from '../../components/Backdrop/Backdrop'
 import Carousel5 from '../../components/Carousel/Carousel'
-import Introduction from '../../components/Introduction/Introduction'
 import Parallax from '../../components/Parallax/Parallax'
 import PhotosGrid from '../../components/PhotosGrid/PhotosGrid'
 import ContactForm from '../../components/ContactForm/ContactForm'
+import Footer from '../../components/Footer/Footer'
 import ScrollUp from '../../components/Scrollup/Scrollup'
+import MediaQuery from "react-responsive";
 
 import './MainPage.css';
-import Footer from '../../components/Footer/Footer';
+
 
 
 
@@ -60,8 +61,12 @@ componentWillUnmount() {
 <ScrollUp/>
      
         
-
-       
+<MediaQuery maxDeviceWidth={650}>
+  <br/> 
+   <br/>   
+   <br/> 
+</MediaQuery>
+ 
 <Carousel5 />  
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} /> 
                    

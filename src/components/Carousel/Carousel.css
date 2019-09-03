@@ -1,10 +1,55 @@
-.sizeImg {
-    width: auto;
-    height: 750px;
-    
-    
-}
+
 
 .hideOverflow {
     overflow-x: hidden;
+
 }
+
+
+.hideOverflow img {
+    height:750px;
+    width: auto;
+}
+
+
+
+@media screen and (max-width: 800px){
+
+
+.hideOverflow img {
+    height:500px !important;
+    width: auto !important;
+}
+}
+
+@media screen and (max-width: 650px){
+
+
+    .hideOverflow img {
+        height:400px !important;
+        width: auto !important;
+    }
+
+   
+    }
+
+
+    @media screen and (max-width: 500px){
+
+
+        .hideOverflow img {
+            height:350px !important;
+            width: auto !important;
+        }
+       
+    }
+
+
+    @media screen and (max-width: 425px){
+
+
+        .hideOverflow img {
+            height:290px !important;
+            width: auto !important;
+        }
+        }

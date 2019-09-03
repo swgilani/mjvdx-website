@@ -157,3 +157,19 @@
         display: none;
     }
 }
+
+
+@media screen and (max-width: 650px){
+
+    .toolbar {
+ 
+        background:#141414; 
+        height: 46px;
+        
+    }
+
+    .toolbar_logo a{
+        color:#37c8c6
+    }
+   
+    }
