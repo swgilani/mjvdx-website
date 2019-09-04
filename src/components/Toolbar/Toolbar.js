@@ -24,6 +24,7 @@ const toolbar = props => {
     const toPackages = () => browserHistory.push("/Packages");
     const toAbout = () => browserHistory.push("/About");
     const toContact = () => browserHistory.push("/Contact");
+    const toMainPage = () => browserHistory.push("/MainPage");
     
    
 return (
@@ -47,7 +48,7 @@ return (
         </div>
         
         <div className="spacer" />
-        <div className="toolbar_logo"><a href='/'>MJVDX</a></div>
+        <div className="toolbar_logo"><a href='/MainPage'>MJVDX</a></div>
         <div className="spacer" />
         <div className="toolbar_navigation-items2">
             <ul className="fonts1">

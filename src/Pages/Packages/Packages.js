@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
-
+import Toolbar from '../../components/Toolbar/Toolbar'
+import Parallax from '../../components/Parallax/PackagesP'
+import Image1 from '../../assets/images/muneeb.jpg';
 import './Packages.css';
+import ContactForm from '../../components/ContactForm/ContactForm'
+import Footer from '../../components/Footer/Footer'
 
 
-class Packages extends Component {
+class About extends Component {
   
     
 
@@ -13,12 +17,19 @@ class Packages extends Component {
     
       return (
 
-        <div>
+        <div className="backgroundPackages">
+<Parallax />
+<Toolbar/>
 
+
+
+<br/>
+<ContactForm/>
+<Footer/>
         </div>
       )
     }
   }
 
 
-  export default Packages
+  export default About
