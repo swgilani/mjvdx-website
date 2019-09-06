@@ -26,7 +26,7 @@ const parallax = props => (
         </div>
     <div className="aboutflexitem2">
 
-     <h1>About me</h1>   
+     <h1 className="parallaxh1size1">About me</h1>   
     </div>
 
 

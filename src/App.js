@@ -10,6 +10,7 @@ import Landscapes from './Pages/Landscapes/Landscapes';
 import Packages from './Pages/Packages/Packages';
 import Portraits from './Pages/Portraits/Portraits';
 import Weddings from './Pages/Weddings/Weddings';
+import FAQ from './Pages/FAQ/FAQ'
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
           <Route path='/Portraits' component={Portraits} />
           <Route path='/Weddings' component={Weddings} />
           <Route path='/MainPage' component={MainPage} />
+          <Route path='/FAQ' component={FAQ} />
 
       </Router>
       </router>

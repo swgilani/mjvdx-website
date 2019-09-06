@@ -27,7 +27,7 @@ const Footer = () => {
    
     <div className="spacing2">
        
-        <p>F.A.Q</p>
+       <a href="FAQ"> <p>F.A.Q</p></a>
         </div>
 
 

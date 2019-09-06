@@ -21,8 +21,7 @@ const parallax = props => (
 
 
 
-<h1  className="parallaxh1size"
->PORTRAITS</h1> 
+<h1 className="parallaxh1size">FAQ</h1> 
     </LazyHero>
 
     {/* ... */}

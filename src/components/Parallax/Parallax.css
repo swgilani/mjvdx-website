@@ -8,6 +8,57 @@ h1 {
 }
 
 
+.parallaxh1size {
+    font-size: 1000%;
+    font-family: 'Gayathri', sans-serif;
+}
+
+@media (max-width:1275px){
+    .parallaxh1size {
+        font-size: 800%;
+        
+    }
+}
+
+@media (max-width:1000px){
+    .parallaxh1size {
+        font-size: 600%;
+        
+    }
+}
+
+@media (max-width:600px){
+    .parallaxh1size {
+        font-size: 400%;
+        
+    }
+}
+
+@media (max-width:400px){
+    .parallaxh1size {
+        font-size: 350%;
+        
+    }
+}
+
+@media (max-width:339px){
+    .parallaxh1size {
+        font-size: 300%;
+        
+    }
+}
+
+@media (max-width:287px){
+    .parallaxh1size {
+        font-size: 200%;
+        
+    }
+}
+
+
+.parallaxh1size1 {
+    font-family: 'Gayathri', sans-serif;
+}
 
 .aboutflexcontainer {
     display: flex;

@@ -1,0 +1,35 @@
+.centerFAQ {
+
+    width: 80%;
+    margin: 0 auto;
+    color: white !important;
+
+}
+
+
+.boldp {
+    font-weight: bold;
+   
+}
+.colorwhite {
+    color: white;
+}
+
+
+.FAQ {
+    background-color: #141414
+}
+
+a.highlight {
+    border:1px solid red;
+}
+
+
+.centerFAQ a {
+    color: #d8dee5;
+}
+
+.smoothscroll {
+    scroll-behavior: smooth;
+}
+
