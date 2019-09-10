@@ -1,7 +1,7 @@
 import React, { useState, useCallback, Component } from "react";
 import { render } from "react-dom";
 import Gallery from "react-photo-gallery";
-import { photos } from "./photos";
+import { photos } from "./landscapephotos";
 import Image1 from '../../assets/images/welcome_page_pic.jpg';
 import Image2 from '../../assets/images/saima_.jpg';
 import Image3 from '../../assets/images/saima_-2.jpg';

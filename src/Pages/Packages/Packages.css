@@ -1,5 +1,172 @@
 .backgroundPackages {
  
-    background-color: #c6c6c6
+    background-color: #141414
 
+}
+
+.centerPackages {
+    width: 90%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    color: white;
+    border: 5px;
+ 
+ }
+
+ .epercent {
+        width: 90%;
+        padding-left: 5%;
+        
+ }
+
+ .boldtext {
+     font-weight: bold;
+     color: white;
+ }
+
+
+ .packagesflex {
+     display: flex;
+     flex-direction: row;
+    
+ }
+
+ .pitem1 {
+    flex: 3;
+ }
+
+ .pitem1 img {
+    height: auto;
+    width: 800px;
+ }
+.pitem2 {
+    flex: 3;
+    
+}
+ 
+
+
+
+@media (max-width: 1500px){
+    .pitem1 img {
+        height: auto;
+        width: 700px;
+     }
+     .epercent {
+        width: 90%;
+        padding-left: 5%;
+        margin-top: -4%;
+        
+ }
+
+}
+
+
+@media (max-width: 1316px){
+    .pitem1 img {
+        height: auto;
+        width: 650px;
+     }
+     .epercent {
+        width: 90%;
+        padding-left: 5%;
+        margin-top: -6%;
+        
+ }
+
+}
+
+
+@media (max-width: 1160px){
+    .pitem2 {
+       font-size: 13px;
+        
+    }
+   
+}
+
+
+
+
+@media (max-width: 1048px){
+    .pitem1 img {
+        height: auto;
+        width: 500px;
+     }
+}
+
+
+
+@media (max-width: 970px){
+    .packagesflex {
+       
+        flex-direction: column;
+    }
+
+    .epercent {
+        width: 100%;
+        padding-left:3% ;
+        margin-top: 0;        
+ }
+ 
+
+ .pitem1 {
+    margin: 0 auto;
+ }
+
+ .pitem2 {
+     margin: 0 auto;
+ }
+
+}
+
+
+
+@media (max-width: 558px){
+    .pitem1 img {
+        height: auto;
+        width: 400px;
+     }
+
+     .pitem2 {
+        font-size: 14px;
+         
+     }
+
+}
+
+@media (max-width: 454px){
+    .pitem1 img {
+        height: auto;
+        width: 350px;
+     }
+
+}
+
+
+@media (max-width: 393px){
+    .pitem1 img {
+        height: auto;
+        width: 300px;
+     }
+
+}
+
+@media (max-width: 336px){
+    .pitem1 img {
+        height: auto;
+        width: 250px;
+     }
+     .pitem2 {
+        font-size: 12px;
+         
+     }
+
+}
+
+
+ul {
+    margin-left: -2%;
 }

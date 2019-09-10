@@ -25,6 +25,7 @@ const toolbar = props => {
     const toAbout = () => browserHistory.push("/About");
     const toContact = () => browserHistory.push("/Contact");
     const toMainPage = () => browserHistory.push("/MainPage");
+    const toFAQ = () => browserHistory.push("/FAQ");
     
    
 return (
@@ -53,9 +54,10 @@ return (
         <div className="toolbar_navigation-items2">
             <ul className="fonts1">
                 
-                <li> <button className="tool-button" onClick={toExperience}>THE EXPERIENCE</button></li>
+               
                 <li> <button className="tool-button" onClick={toPackages}>PACKAGES</button></li>
                 <li> <button className="tool-button" onClick={toAbout}>ABOUT ME</button></li>
+                <li> <button className="tool-button" onClick={toFAQ}>FAQ</button></li>
                 <li><button className="tool-button" onClick={toContact}>CONTACT</button></li>
                 
             </ul>

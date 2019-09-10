@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Toolbar from '../../components/Toolbar/Toolbar'
 import Parallax from '../../components/Parallax/PortraitsP'
-import PhotosGrid from '../../components/PhotosGrid/PhotosGrid'
+import PhotosGrid from '../../components/PhotosGrid/PortraitGrid'
 import './Portraits.css';
 import ContactForm from '../../components/ContactForm/ContactForm'
 import Footer from '../../components/Footer/Footer'

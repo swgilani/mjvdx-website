@@ -58,38 +58,40 @@ componentWillUnmount() {
     return (
       <div classname="MainPage" style={{height: '100%'}}>
 
-<ScrollUp/>
+        <ScrollUp/>
      
         
-<MediaQuery maxDeviceWidth={650}>
-  <br/> 
-   <br/>   
-   <br/> 
-</MediaQuery>
- 
-<Carousel5 />  
+        <MediaQuery maxDeviceWidth={650}>
+        <br/> 
+        <br/>   
+        <br/> 
+        </MediaQuery>
+      
+        <Carousel5 />  
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} /> 
                    
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
 
 
-<br/>
+      <br/>
       <div className="flexCenter">
 
        
         
-        </div>
+      </div>
        
       <Parallax />
 
 
-<br/>
-<PhotosGrid />
+      <br/>
+    
+      <PhotosGrid />
+      
 
-<br/>
-<ContactForm id='main-contact-form' className='contact-form' name='contact-form' method='post' action='' />
-<Footer />
+      <br/>
+      <ContactForm id='main-contact-form' className='contact-form' name='contact-form' method='post' action='' />
+      <Footer />
 
       </div>
       
