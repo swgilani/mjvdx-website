@@ -4,7 +4,7 @@ import SideDrawer from '../../components/SideDrawer/SideDrawer'
 import Backdrop from '../../components/Backdrop/Backdrop'
 import Cards from '../../components/Cards/Cards'
 import Parallax from '../../components/Parallax/WeddingsP'
-import PhotosGrid from '../../components/PhotosGrid/PhotosGrid'
+import PhotosGrid from '../../components/PhotosGrid/JowayneGrid'
 import ContactForm from '../../components/ContactForm/ContactForm'
 import Footer from '../../components/Footer/Footer'
 import ScrollUp from '../../components/Scrollup/Scrollup'
@@ -65,7 +65,7 @@ componentWillUnmount() {
 
       <br/>
       
-    
+    <PhotosGrid/>    
       
 
 

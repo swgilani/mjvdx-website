@@ -35,7 +35,7 @@ import Image34 from '../../Pictures/Landscape/nyc manhattan.jpg';
 import Image35 from '../../Pictures/Landscape/nyc night trails.jpg';
 import Image36 from '../../Pictures/Landscape/nyc top of the rock_.jpg';
 import Image37 from '../../Pictures/Landscape/nyea.jpg';
-import Image38 from '../../Pictures/Landscape/old cityy halll.jpg';
+/*import Image38 from '../../Pictures/Landscape/old cityy halll.jpg';  */
 import Image39 from '../../Pictures/Landscape/panorama.jpg';
 import Image40 from '../../Pictures/Landscape/patio by nandos.jpg';
 import Image41 from '../../Pictures/Landscape/skydeck night 1.jpg';
@@ -240,11 +240,11 @@ export const photos = [
     width: 3,
     height: 4
   },
-  {
+ /* {
     src: Image38,
     width: 3,
     height: 4
-  },
+  },*/
   {
     src: Image39,
     width: 3,

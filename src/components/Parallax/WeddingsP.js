@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Image1 from '../../Pictures/Weddings/Jowayne and T_s Wedding/Jowayne_wedding-265.jpg';
+import Image1 from '../../Pictures/Weddings/jow-wedding/Jowayne_wedding-265.jpg';
 import LazyHero from 'react-lazy-hero';
 import './Parallax.css';
 

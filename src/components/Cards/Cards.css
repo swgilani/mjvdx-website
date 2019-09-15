@@ -1,7 +1,404 @@
 .obtainwidth {
+
     width: 90%;
     margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
+    
+
 }
 
-/* http://jsfiddle.net/2qCY7/11/ */
+ .album-button {
+	width: 230px;
+    height: 70px;
+   
+    overflow: hidden;
+    background-image: url('../../Pictures/Weddings/saima-wedding/saima.jpg') !important;
+	display:inline-block;
+    font-size: 24px;
+    color:#FFFFFF;
+    text-align:center;
+    padding-top:170px;
+    text-decoration:none;
+    background-size: cover;
+    -webkit-box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+   
+}
 
+
+.album-button1 {
+	width: 230px;
+    height: 70px;
+    
+    overflow: hidden;
+    background-image: url('../../Pictures/Weddings/jow-wedding/Jowayne_wedding-341.jpg') !important;
+	display:inline-block;
+    font-size: 24px;
+    color:#FFFFFF;
+    text-align:center;
+    padding-top:170px;
+    text-decoration:none;
+    background-size: cover;
+    -webkit-box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+   
+}
+
+
+.album-button2 {
+	width: 230px;
+    height: 70px;
+    
+    overflow: hidden;
+    background-image: url('../../Pictures/Weddings/sarah-wedding/SarahGakiwad000-103.jpg') !important;
+	display:inline-block;
+    font-size: 24px;
+    color:#FFFFFF;
+    text-align:center;
+    padding-top:170px;
+    text-decoration:none;
+    background-size: cover;
+    -webkit-box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+   
+}
+
+
+.album-button3 {
+	width: 230px;
+    height: 70px;
+   
+    overflow: hidden;
+    background-image: url('../../Pictures/Weddings/E-shoot/Ayesha/ayesha-62.jpg') !important;
+	display:inline-block;
+    font-size: 24px;
+    color:#FFFFFF;
+    text-align:center;
+    padding-top:170px;
+    text-decoration:none;
+    background-size: cover;
+    -webkit-box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+   
+}
+
+
+
+.album-button:hover {
+
+	background-size:cover;
+	transform: scale(1.1);
+	-webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -o-transition: 400ms;
+    -ms-transition: 400ms;
+    transition: 400ms;
+    color:#000000;
+}
+.album-button1:hover {
+
+	background-size:cover;
+	transform: scale(1.1);
+	-webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -o-transition: 400ms;
+    -ms-transition: 400ms;
+    transition: 400ms;
+    color:#000000;
+}
+.album-button2:hover {
+
+	background-size:cover;
+	transform: scale(1.1);
+	-webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -o-transition: 400ms;
+    -ms-transition: 400ms;
+    transition: 400ms;
+    color:#000000;
+}
+.album-button3:hover {
+
+	background-size:cover;
+	transform: scale(1.1);
+	-webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -o-transition: 400ms;
+    -ms-transition: 400ms;
+    transition: 400ms;
+    color:#000000;
+}
+
+
+.experiencepic {
+    height: auto;
+    width: 79%;
+  
+
+
+  -webkit-box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+
+}
+
+
+.cardsflexcontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    height: 1120px;
+}
+
+
+
+.cardsflexitem {
+    flex: 5;
+    padding:15px 0;
+    
+   
+    
+}
+
+
+
+
+.cardsflexitem1{
+    flex: 3;
+   padding-right: -30px;
+    width: 70%;
+  
+
+    
+}
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+.blockquote{
+  font-size: 14px;
+  width:75%;
+ margin-top: 25px;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+  -webkit-box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+}
+
+.spancolor  {
+    color: #555555 !important;
+}
+
+.blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.blockquote::after{
+  content: '';
+}
+
+.blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+
+
+
+@media screen and  (max-width:1041px){
+    .cardsflexitem {
+        width: 30% !important;
+
+    }
+}
+
+@media screen and  (max-width:957px){
+    .cardsflexitem {
+        width: 33% !important;
+
+    }
+}
+
+
+@media screen and  (max-width:847px){
+    .cardsflexitem {
+        width: 35% !important;
+
+    }
+}
+
+
+@media screen and  (max-width:800px){
+    .cardsflexitem {
+        width: 35.5% !important;
+
+    }
+}
+
+
+
+@media screen and  (max-width:785px){
+  
+.cardsflexcontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: nowrap; /* Safari 6.1+ */
+    height: auto;
+
+   
+    
+}
+
+.hrshownah {
+    display: inline;
+}
+
+.cardsflexitem {
+    
+    margin: 0 auto;
+    width: 70%;
+    flex: 1;
+}
+
+.cardsflexitem1{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.experiencepic {
+    width: 100%;
+}
+
+}
+
+@media screen and  (max-width:552px){
+
+    .cardsflexitem {
+    
+       
+       margin: 0 auto;
+        margin-left: 28%;
+        
+    }
+
+
+    .experiencepic {
+        width: 120%;
+        margin-left: -10%;
+    }
+
+    .blockquote{
+        font-size: 12px;
+        width:100%;
+       margin-top: 25px;
+       margin-left: -15%;
+      }
+    
+    
+
+}
+
+@media screen and  (max-width:478px){
+
+    .cardsflexitem {
+    
+       
+       margin: 0 auto;
+        margin-left: 25%;
+        
+    }
+
+
+    .experiencepic {
+        width: 140%;
+        margin-left: -18%;
+    }
+
+    .blockquote{
+        font-size: 12px;
+        width:100%;
+       margin-top: 25px;
+       margin-left: -18%;
+      }
+    
+    
+
+}
+
+@media screen and  (max-width:428px){
+
+    .cardsflexitem {
+    
+       
+       margin: 0 auto;
+        margin-left: 21%;
+        
+    }
+    
+
+}
+
+@media screen and  (max-width:388px){
+
+    .cardsflexitem {
+    
+       
+       margin: 0 auto;
+        margin-left: 18%;
+        
+    }
+
+    
+    .experiencepic {
+        width: 140%;
+        margin-left: -19%;
+    }
+
+    .blockquote{
+        font-size: 12px;
+        width:100%;
+       margin-top: 25px;
+       margin-left: -21%;
+      }
+    
+    
+
+}
+
+@media screen and  (max-width:342px){
+
+    .cardsflexitem {
+    
+       
+       margin: 0 auto;
+        margin-left: 13%;
+        
+    }
+    
+
+}

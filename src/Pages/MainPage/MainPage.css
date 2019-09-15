@@ -6,7 +6,9 @@
 
 
 .MainPage {
-    background-color: #141414
+    background-color: #666666;
+    background-image:url('../../assets/images/greyfloral.png');
+    background-repeat: repeat;
 }
 
 

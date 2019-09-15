@@ -10,6 +10,10 @@ import Landscapes from './Pages/Landscapes/Landscapes';
 import Packages from './Pages/Packages/Packages';
 import Portraits from './Pages/Portraits/Portraits';
 import Weddings from './Pages/Weddings/Weddings';
+import Saima from './Pages/Weddings/Saima'
+import Jowayne from './Pages/Weddings/Jowayne'
+import Sarah from './Pages/Weddings/Sarah'
+import Eshoots from './Pages/Weddings/Eshoots'
 import FAQ from './Pages/FAQ/FAQ'
 
 export default function App() {
@@ -28,6 +32,10 @@ export default function App() {
           <Route path='/Weddings' component={Weddings} />
           <Route path='/MainPage' component={MainPage} />
           <Route path='/FAQ' component={FAQ} />
+          <Route path='/Saima' component={Saima} />
+          <Route path='/Jowayne' component={Jowayne} />
+          <Route path='/Sarah' component={Sarah} />
+          <Route path='/Eshoots' component={Eshoots} />
 
       </Router>
       </router>
