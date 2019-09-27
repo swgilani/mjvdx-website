@@ -1,10 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import './Footer.css';
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -20,14 +16,14 @@ const Footer = () => {
         <p>Copyright MJVDX, 2019</p>
       
         <div className="toggleIcons">
-       <a href="#"> <i className="fab fa-instagram spacingp spacingIcons" > </i></a> 
-       <a href="#"><i className="fab fa-facebook-f spacingp spacingIcons" > </i></a> 
+       <a href="https://www.instagram.com/mjvdx/"> <i className="fab fa-instagram spacingp spacingIcons" > </i></a> 
+       <a href="https://www.facebook.com/mjvdx/"><i className="fab fa-facebook-f spacingp spacingIcons" > </i></a> 
     </div>
         </div>
    
     <div className="spacing2">
        
-       <a href="FAQ"> <p>F.A.Q</p></a>
+     <Link to='FAQ'><p>F.A.Q</p></Link> 
         </div>
 
 

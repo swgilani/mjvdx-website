@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Image1 from '../../Pictures/Portraits/ayah.jpg';
 import Image2 from '../../Pictures/Portraits/ayah brick wall.jpg';
 import Image3 from '../../Pictures/Portraits/danielah 1.1.jpg';
@@ -51,7 +52,7 @@ import Image50 from '../../Pictures/Portraits/saimaaaa ps.jpg';
 import Image51 from '../../Pictures/Portraits/sarah coffee shop.jpg';
 import Image52 from '../../Pictures/Portraits/sarah coffee shop-2.jpg';
 import Image54 from '../../Pictures/Portraits/sarah coffee shop-3.jpg';
-import Image55 from '../../Pictures/Portraits/sarah coffee shop-4.jpg';
+import Image55 from '../../Pictures/Portraits/sarah coffee shop-4.jpg'; /*Unused images bc it was running slow */
 import Image56 from '../../Pictures/Portraits/sarah coffee shop-7.jpg';
 import Image57 from '../../Pictures/Portraits/sarah window.jpg';
 import Image58 from '../../Pictures/Portraits/sarah window-2.jpg';
@@ -145,7 +146,10 @@ export const photos = [
     src: Image15,
     width: 3,
     height: 4
-  },
+  }
+  /*
+  ,
+
   {
     src: Image16,
     width: 3,
@@ -332,5 +336,5 @@ export const photos = [
     width: 3,
     height: 4
   }
-  
+  */
 ];

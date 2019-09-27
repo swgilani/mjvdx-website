@@ -2,16 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx'
-import {HashRouter as Routers} from 'react-router-dom'
-import {browserHistory} from 'react-router'
+import { HashRouter } from 'react-router-dom'
+
+
 
 
 ReactDOM.render(
 
+<HashRouter>
 
 <App />
-
+</HashRouter>
 
 , document.getElementById('root'));
 

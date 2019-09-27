@@ -11,7 +11,7 @@ render () {
             <input className="sizedinput"
             type={this.props.type}
             name={this.props.name}
-            className={this.props.className}
+            
             required={this.props.required}
             onChange={this.props.onChange}
             value={this.props.value}

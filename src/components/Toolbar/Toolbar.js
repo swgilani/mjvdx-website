@@ -1,7 +1,8 @@
 import React from 'react';
 import './Toolbar.css';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
-import Headroom from 'react-headroom'
+import { Link } from 'react-router-dom'
+
 
 import { browserHistory } from "react-router";
 
@@ -20,11 +21,11 @@ const toolbar = props => {
     const toPortraits = () => browserHistory.push("/Portraits");
     const toWeddings = () => browserHistory.push("/Weddings");
     const toEvents = () => browserHistory.push("/Events");
-    const toExperience = () => browserHistory.push("/Experience");
+    
     const toPackages = () => browserHistory.push("/Packages");
     const toAbout = () => browserHistory.push("/About");
     const toContact = () => browserHistory.push("/Contact");
-    const toMainPage = () => browserHistory.push("/MainPage");
+    
     const toFAQ = () => browserHistory.push("/FAQ");
     
    
@@ -39,27 +40,46 @@ return (
         
         
         <div className="toolbar_navigation-items1">
-            <ul className="fonts1">        
-        <li><button className="tool-button" onClick={toLandscapes} >LANDSCAPES</button></li>
-        <li><button className="tool-button" onClick={toPortraits}>PORTRAITS</button></li>
-        <li><button className="tool-button" onClick={toWeddings}>WEDDINGS</button></li>
-        <li><button className="tool-button" onClick={toEvents}>EVENTS</button></li>    
-        
+            <ul className="fonts1">   
+
+            <Link to='/Landscapes'>
+      <li><button className="tool-button">LANDSCAPES</button></li> 
+        </Link>
+        <Link to='/Portraits'>
+        <li><button className="tool-button">PORTRAITS</button></li>
+        </Link>
+        <Link to='/Weddings'>
+        <li><button className="tool-button">WEDDINGS</button></li>
+        </Link>
+
+        <Link to='Events'>
+        <li><button className="tool-button">EVENTS</button></li>    
+        </Link>
             </ul>
         </div>
         
         <div className="spacer" />
-        <div className="toolbar_logo"><a href='/MainPage'>MJVDX</a></div>
+        <div className="toolbar_logo">
+        <Link to='MainPage'>
+        <a>MJVDX</a>
+        </Link>
+        </div>
         <div className="spacer" />
         <div className="toolbar_navigation-items2">
             <ul className="fonts1">
                 
-               
-                <li> <button className="tool-button" onClick={toPackages}>PACKAGES</button></li>
-                <li> <button className="tool-button" onClick={toAbout}>ABOUT ME</button></li>
-                <li> <button className="tool-button" onClick={toFAQ}>FAQ</button></li>
-                <li><button className="tool-button" onClick={toContact}>CONTACT</button></li>
-                
+               <Link to='/Packages'>
+                <li> <button className="tool-button">PACKAGES</button></li>
+                </Link>
+                <Link to='/About'>
+                <li> <button className="tool-button">ABOUT ME</button></li>
+                </Link>
+                <Link to='/FAQ'>
+                <li> <button className="tool-button">FAQ</button></li>
+                </Link>
+                <Link to='/Contact'>
+                <li><button className="tool-button">CONTACT</button></li>
+                </Link>
             </ul>
         </div>
         

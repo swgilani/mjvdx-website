@@ -1,6 +1,7 @@
 import React from 'react';
 import './SideDrawer.css';
 import { browserHistory } from "react-router";
+import { Link } from 'react-router-dom'
 
 const sideDrawer = props => {
 let drawerClasses = 'side-drawer'
@@ -27,15 +28,33 @@ const toContact = () => browserHistory.push("/Contact");
 <nav className = {drawerClasses}>
 
 <ul className="fonts1">
-    
-<li><button className="tool-button" onClick={toLandscapes} >LANDSCAPES</button></li>
-        <li><button className="tool-button" onClick={toPortraits}>PORTRAITS</button></li>
-        <li><button className="tool-button" onClick={toWeddings}>WEDDINGS</button></li>
-        <li><button className="tool-button" onClick={toEvents}>EVENTS</button></li>    
-        <li> <button className="tool-button" onClick={toExperience}>THE EXPERIENCE</button></li>
-                <li> <button className="tool-button" onClick={toPackages}>PACKAGES</button></li>
-                <li> <button className="tool-button" onClick={toAbout}>ABOUT ME</button></li>
-                <li><button className="tool-button" onClick={toContact}>CONTACT</button></li>  
+
+      <Link to='/Landscapes'>
+      <li><button className="tool-button">LANDSCAPES</button></li> 
+        </Link>
+        <Link to='/Portraits'>
+        <li><button className="tool-button">PORTRAITS</button></li>
+        </Link>
+        <Link to='/Weddings'>
+        <li><button className="tool-button">WEDDINGS</button></li>
+        </Link>
+
+        <Link to='Events'>
+        <li><button className="tool-button">EVENTS</button></li>    
+        </Link>
+
+      <Link to='/Packages'>
+                <li> <button className="tool-button">PACKAGES</button></li>
+                </Link>
+                <Link to='/About'>
+                <li> <button className="tool-button">ABOUT ME</button></li>
+                </Link>
+                <Link to='/FAQ'>
+                <li> <button className="tool-button">FAQ</button></li>
+                </Link>
+                <Link to='/Contact'>
+                <li><button className="tool-button">CONTACT</button></li>
+                </Link>
     
 </ul>
 

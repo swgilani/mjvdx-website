@@ -6,13 +6,7 @@ import Button from './Button'
 import * as emailjs from 'emailjs-com'
 import 'jquery'
 import './ContactForm.css'
-import { ToastProvider, useToasts } from 'react-toast-notifications'
-import backgroundImage from '../../assets/images/cne-wall.jpg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
 
 class ContactForm extends Component {
 
@@ -169,8 +163,8 @@ return (
     <div className="div1contact">
         <h1 className="contact-text2">Let's chat!
          </h1>
-       <a href="#"> <i className="fab fa-instagram fa-5x contact-text2 icon-contact1" > </i></a> 
-       <a href="#"><i className="fab fa-facebook-f fa-5x contact-text2 icon-contact2" > </i></a> 
+       <a href="https://www.instagram.com/mjvdx/"> <i className="fab fa-instagram fa-5x contact-text2 icon-contact1" > </i></a> 
+       <a href="https://www.facebook.com/mjvdx/"><i className="fab fa-facebook-f fa-5x contact-text2 icon-contact2" > </i></a> 
         
     </div>
 

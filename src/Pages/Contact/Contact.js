@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-import ContactPage from '../../components/ContactForm/ContactPage'
+
 import ContactForm from '../../components/ContactForm/ContactForm'
-import Input from '../../components/ContactForm/Input'
-import TextArea from '../../components/ContactForm/TextArea'
-import Button from '../../components/ContactForm/Button'
+
 
 
 

@@ -1,10 +1,10 @@
-import React, { useState, useCallback, Component } from "react";
-import { render } from "react-dom";
+import React, { useState, useCallback} from "react";
+
 import Gallery from "react-photo-gallery";
 import { photos } from "./jowaynephotos"
 import './PhotosGrid.css'
 import Carousel, { Modal, ModalGateway } from "react-images";
-import ReactDOM from 'react-dom';
+
 import LazyLoad from 'react-lazyload';
 
 

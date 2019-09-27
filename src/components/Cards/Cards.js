@@ -1,7 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 
 import React from 'react';
 import Image1 from '../../Pictures/Weddings/E-shoot/Ayesha/experience.png';
-
+import { Link } from 'react-router-dom'
 import { browserHistory } from "react-router";
 
 
@@ -33,28 +34,36 @@ return (
 
         <div className="cardsflexitem">
            
-            <a className="album-button" onClick={toSaima}> 
+           <Link to='Saima'>
+            <a className="album-button"> 
 	        SAIMA'S WEDDING</a>
-               
+                </Link>
          </div>
 
 
     <div className="cardsflexitem">
-            <a onClick={toJowayne} className="album-button1">
+
+                <Link to='Jowayne'>
+            <a className="album-button1">
             JOWAYNE AND T'S WEDDING</a>
+            </Link>
     </div>
 
 
     <div className="cardsflexitem">
-            <a onClick={toSarah} className="album-button2">
+                <Link to="Sarah">
+            <a className="album-button2">
             SARAH AND JAY'S WEDDING</a>
+            </Link>
     </div>
 
 
 
     <div className="cardsflexitem">
-            <a onClick={toEshoots} className="album-button3">
+                <Link to='Eshoots'>
+            <a className="album-button3">
             E-SHOOTS</a>
+            </Link>
     </div>
 
 

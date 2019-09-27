@@ -1,10 +1,11 @@
-import React, { useState, useCallback, Component } from "react";
-import { render } from "react-dom";
+import React, { useState, useCallback} from "react";
+
 import Gallery from "react-photo-gallery";
 import { photos } from "./SaimaPhotos"
+import { test } from "./test"
 import './PhotosGrid.css'
 import Carousel, { Modal, ModalGateway } from "react-images";
-import ReactDOM from 'react-dom';
+
 import LazyLoad from 'react-lazyload';
 
 
@@ -36,7 +37,7 @@ function PhotosGrid() {
                 currentIndex={currentImage}
 
                 
-                views={photos.map(x => ({
+                views={test.map(x => ({
                   ...x,
                   srcset: x.srcSet,
                   caption: x.title
