@@ -4,21 +4,56 @@ import Parallax from '../../components/Parallax/FAQP'
 import ContactForm from '../../components/ContactForm/ContactForm'
 import Footer from '../../components/Footer/Footer'
 import './FAQ.css'
+import Backdrop from '../../components/Backdrop/Backdrop'
+
+import SideDrawer from '../../components/SideDrawer/SideDrawer'
+import ReactDOM from 'react-dom';
 
 
 class About extends Component {
   
-    
+  state = {
+    sideDrawerOpen: false,
+  }
+
+
+  componentDidMount(){
+    ReactDOM.findDOMNode(this).scrollIntoView();
+    document.body.classList.add("MainPage");
+
+}
+
+componentWillUnmount() {
+  document.body.classList.remove("MainPage");
+}
+
+  drawerToggleClickHandler = () => {
+    this.setState(prevState => {
+      return { sideDrawerOpen: !prevState.sideDrawerOpen }
+    })
+  }
+
+  backdropClickHandler = () => {
+    this.setState({ sideDrawerOpen: false })
+  }
 
   
 
     render() {
+
+      let backdrop;
+    if (this.state.sideDrawerOpen) {
+      backdrop = <Backdrop click={this.backdropClickHandler} />;
+    }
+
     
       return (
 
         <div className="FAQ">
                         <Parallax />
-                        <Toolbar/>
+                        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} /> 
+                   
+                   <SideDrawer show={this.state.sideDrawerOpen} />
                     <div className="centerFAQ">
 
 
@@ -40,7 +75,7 @@ class About extends Component {
 
 
 
-
+                        <hr/>
 
                 <section className="smoothscroll">
 
@@ -48,7 +83,7 @@ class About extends Component {
                 <p className="colorwhite">
                 Packages are all available for viewing, in the package section.  Rates and collections can also vary based on the specific type of event and the type of coverage you are looking for. Custom collections are generally created for most clients, the packages are a starting point! Please get in touch so I can provide a custom quote.
                 </p>
-                <hr/>
+               
 
 
 
@@ -57,14 +92,14 @@ class About extends Component {
                 Yes! All images that you receive have been edited and cleaned up! Any favourites can go through additional retouching for additional add-ons! 
                 </p>
 
-                <hr/>
+                
 
                 <h3 className="boldp" id="C3">Do you offer engagement sessions?</h3>
                 <p className="colorwhite">
                 Yes! A complimentary e-shoot is included in every package you choose! I will consult with you to discuss cool/unique concepts for the e-shoot that reflect YOUR personality! E-shoots are done a month prior to the wedding so you can get a print to display on the wedding day! Please contact me for more information!
                 </p>
 
-                <hr/>
+            
 
 
                 <h3 className="boldp" id="C4">Is there a permit required for the photo-shoot location?</h3>

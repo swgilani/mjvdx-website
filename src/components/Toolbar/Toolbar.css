@@ -13,6 +13,7 @@
     
 }
 
+
 .tool-button {
     background-color:transparent;
     border: none;
@@ -169,7 +170,7 @@
     }
 
     .toolbar_logo a{
-        color:#37c8c6
+        color:white
     }
    
     }

@@ -8,23 +8,64 @@ import Image4 from '../../assets/packagesPhotos/image4new.jpg';
 import './Packages.css';
 import ContactForm from '../../components/ContactForm/ContactForm'
 import Footer from '../../components/Footer/Footer'
-
+import SideDrawer from '../../components/SideDrawer/SideDrawer'
+import Backdrop from '../../components/Backdrop/Backdrop'
+import ReactDOM from 'react-dom';
 
 class About extends Component {
   
-    
+  state = {
+    sideDrawerOpen: false,
+  }
+
+
+  componentDidMount(){
+    ReactDOM.findDOMNode(this).scrollIntoView();
+    document.body.classList.add("MainPage");
+
+}
+
+componentWillUnmount() {
+  document.body.classList.remove("MainPage");
+}
+
+  drawerToggleClickHandler = () => {
+    this.setState(prevState => {
+      return { sideDrawerOpen: !prevState.sideDrawerOpen }
+    })
+  }
+
+  backdropClickHandler = () => {
+    this.setState({ sideDrawerOpen: false })
+  }
+
 
   
 
     render() {
+
+      let backdrop;
+      if (this.state.sideDrawerOpen) {
+        backdrop = <Backdrop click={this.backdropClickHandler} />;
+      }
+  
     
       return (
 
+        
+
         <div className="backgroundPackages">
 
-
           <Parallax />
-          <Toolbar/>
+      =
+          <Toolbar drawerClickHandler={this.drawerToggleClickHandler} /> 
+                   
+                   <SideDrawer show={this.state.sideDrawerOpen} />
+                   {backdrop}
+
+
+       
+          
 
         <div className="centerPackages">
         <p>All packages can be custom fitted to your desire. We promise to build a package to fully suit all of your needs!</p>
@@ -141,61 +182,7 @@ class About extends Component {
         <br/>
         <hr/>
         <br/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
-
-
-
-
-
           <br/>
           <ContactForm/>
           <Footer/>

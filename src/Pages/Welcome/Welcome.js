@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import ReactDOM from 'react-dom';
 import './Welcome.css';
 
 
@@ -9,6 +9,9 @@ class Welcome extends Component {
         window.location.href= './MainPage'
     }
 
+    componentDidMount(){
+      ReactDOM.findDOMNode(this).scrollIntoView();
+}
   
 
     render() {

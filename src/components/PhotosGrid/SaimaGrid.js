@@ -2,7 +2,6 @@ import React, { useState, useCallback} from "react";
 
 import Gallery from "react-photo-gallery";
 import { photos } from "./SaimaPhotos"
-import { test } from "./test"
 import './PhotosGrid.css'
 import Carousel, { Modal, ModalGateway } from "react-images";
 
@@ -37,7 +36,7 @@ function PhotosGrid() {
                 currentIndex={currentImage}
 
                 
-                views={test.map(x => ({
+                views={photos.map(x => ({
                   ...x,
                   srcset: x.srcSet,
                   caption: x.title
@@ -50,4 +49,4 @@ function PhotosGrid() {
       </div>
     );
   }
-    export default PhotosGrid;
+    export default PhotosGrid

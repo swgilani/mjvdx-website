@@ -1,7 +1,7 @@
 import React, { useState, useCallback} from "react";
 
 import Gallery from "react-photo-gallery";
-import { photos } from "./SaimaPhotos"
+import { photos } from "./eshootphotos.js"
 import './PhotosGrid.css'
 import Carousel, { Modal, ModalGateway } from "react-images";
 

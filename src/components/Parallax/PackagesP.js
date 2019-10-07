@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Image1 from '../../assets/images/cne-wall.jpg';
+import Image1 from '../../assets/images/cne_wall.jpg';
 import LazyHero from 'react-lazy-hero';
 import './Parallax.css';
 
@@ -15,7 +15,7 @@ const parallax = props => (
     minHeight="75vh"
     imageSrc={Image1}
     parallaxOffset="60"
-    opacity="0.3"
+    opacity="0.2"
    
      >
 

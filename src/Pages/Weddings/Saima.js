@@ -7,8 +7,8 @@ import Parallax from '../../components/Parallax/WeddingsP'
 import PhotosGrid from '../../components/PhotosGrid/SaimaGrid'
 import ContactForm from '../../components/ContactForm/ContactForm'
 import Footer from '../../components/Footer/Footer'
-import ScrollUp from '../../components/Scrollup/Scrollup'
 
+import ReactDOM from 'react-dom';
 import './Weddings.css';
 
 
@@ -26,6 +26,7 @@ class MainPage extends Component {
 
 
   componentDidMount(){
+    ReactDOM.findDOMNode(this).scrollIntoView();
     document.body.classList.add("MainPage");
 
 }
@@ -57,7 +58,7 @@ componentWillUnmount() {
     return (
       <div>
            <Parallax/>
-        <ScrollUp/>
+   
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} /> 
                    
         <SideDrawer show={this.state.sideDrawerOpen} />

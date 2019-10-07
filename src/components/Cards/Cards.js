@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 import React from 'react';
-import Image1 from '../../Pictures/Weddings/E-shoot/Ayesha/experience.png';
+import Image1 from '../../Pictures/Weddings/E-shoot/Ayesha/experience.jpg';
 import { Link } from 'react-router-dom'
 import { browserHistory } from "react-router";
 
@@ -11,18 +11,34 @@ import { browserHistory } from "react-router";
 import './Cards.css';
 
 
+class Cards extends React.Component {
 
-const cards = props => {
+
+    saima() {
+        
+        window.location.assign("https://mjvdx.com/#/Saima");
+    }
+    jowayne() {
+      
+        window.location.assign("https://mjvdx.com/#/Jowayne");
+    }
+    events() {
+
+        window.location.assign("https://mjvdx.com/#/Events");
+    }
+    eshoots() {
+
+        window.location.assign("https://www.mjvdx.com/#/eshoots");
+    }
 
 
-        const toSaima = () => browserHistory.push("/Saima");
-        const toJowayne = () => browserHistory.push("/Jowayne");
-        const toEshoots = () => browserHistory.push("/Eshoots");
-        const toSarah = () => browserHistory.push("/Sarah");
+      render() {
 
+       
 
 
 return (
+ 
 
 
 <div className="obtainwidth">
@@ -34,36 +50,36 @@ return (
 
         <div className="cardsflexitem">
            
-           <Link to='Saima'>
-            <a className="album-button"> 
+           
+            <a onClick={this.saima} className="album-button"> 
 	        SAIMA'S WEDDING</a>
-                </Link>
+             
          </div>
 
 
     <div className="cardsflexitem">
 
-                <Link to='Jowayne'>
-            <a className="album-button1">
+                
+            <a onClick={this.jowayne} className="album-button1">
             JOWAYNE AND T'S WEDDING</a>
-            </Link>
+            
     </div>
 
 
     <div className="cardsflexitem">
-                <Link to="Sarah">
-            <a className="album-button2">
-            SARAH AND JAY'S WEDDING</a>
-            </Link>
+                
+            <a onClick={this.events} className="album-button2">
+            EVENTS</a>
+          
     </div>
 
 
 
     <div className="cardsflexitem">
-                <Link to='Eshoots'>
-            <a className="album-button3">
+          
+            <a onClick={this.eshoots} className="album-button3">
             E-SHOOTS</a>
-            </Link>
+           
     </div>
 
 
@@ -73,8 +89,8 @@ return (
 
 
     <div className="cardsflexitem1">
-        <h1 style={{color:"black"}}>The Experience</h1> 
-        <p style={{color:"black"}}>You’re planning the biggest day of your life and it all comes down to this joyous event! Let me capture the raw emotions, love, laughter and tears in a simple, elegant and cinematic look! 
+        <h1 style={{color:"white"}}>The Experience</h1> 
+        <p style={{color:"white"}}>You’re planning the biggest day of your life and it all comes down to this joyous event! Let me capture the raw emotions, love, laughter and tears in a simple, elegant and cinematic look! 
                                         I will be there during every step of the process- from helping you plan your wedding schedule, finding suitable good E-shoot locations, to delivering your beautifully edited pictures shortly after the wedding!
                                         I will capture memories that you will cherish for a lifetime! Don't believe me? Hear from a recently married couple below!
          </p>
@@ -101,7 +117,8 @@ After seeing the pictures, I must say I was very shocked. Muneeb did a tremendou
 
 
 
-);
+)
+}
 }
 
-export default cards;
+export default Cards;

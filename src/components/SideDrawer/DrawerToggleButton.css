@@ -18,11 +18,11 @@
 .toggle-button__line {
     width:30px;
     height: 3px;
-    background: #37c8c6;
+    background: white;
     
 }
 
 .toggle-button__line:hover {
     
-   background: #2acad5;
+   background: white;
 }

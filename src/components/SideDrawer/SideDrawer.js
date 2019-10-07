@@ -11,14 +11,6 @@ if (props.show){
 
 
 
-const toLandscapes = () => browserHistory.push("/Landscapes");
-const toPortraits = () => browserHistory.push("/Portraits");
-const toWeddings = () => browserHistory.push("/Weddings");
-const toEvents = () => browserHistory.push("/Events");
-const toExperience = () => browserHistory.push("/Experience");
-const toPackages = () => browserHistory.push("/Packages");
-const toAbout = () => browserHistory.push("/About");
-const toContact = () => browserHistory.push("/Contact");
 
 
 

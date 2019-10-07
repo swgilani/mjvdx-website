@@ -7,7 +7,7 @@ import MainPage from './Pages/MainPage/MainPage';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
 import Events from './Pages/Events/Events';
-import Experience from './Pages/Experience/Experience';
+
 import Landscapes from './Pages/Landscapes/Landscapes';
 import Packages from './Pages/Packages/Packages';
 import Portraits from './Pages/Portraits/Portraits';
@@ -17,6 +17,11 @@ import Jowayne from './Pages/Weddings/Jowayne'
 import Sarah from './Pages/Weddings/Sarah'
 import Eshoots from './Pages/Weddings/Eshoots'
 import FAQ from './Pages/FAQ/FAQ'
+import Prom from './Pages/Events/Prom'
+import LoveToronto from './Pages/Events/LoveToronto'
+import BillyBall from './Pages/Events/BillyBall'
+import Baby from './Pages/Events/Baby'
+
 
 
 
@@ -43,7 +48,7 @@ export default function App() {
           <Route path='/About' exact component={About} />
           <Route path='/Contact' exact  component={Contact} />
           <Route path='/Events' exact component={Events} />
-          <Route path='/Experience' exact component={Experience} />
+          
           <Route path='/Landscapes' exact component={Landscapes} />
           <Route path='/Packages' exact component={Packages} />
           <Route path='/Portraits' exact component={Portraits} />
@@ -54,6 +59,10 @@ export default function App() {
           <Route path='/Jowayne' exact component={Jowayne} />
           <Route path='/Sarah' exact component={Sarah} />
           <Route path='/Eshoots' exact component={Eshoots} />
+          <Route path='/Prom' exact component={Prom} />
+          <Route path='/LoveToronto' exact component={LoveToronto} />
+          <Route path='/BillyBall' exact component={BillyBall} />
+          <Route path='/Baby' exact component={Baby} />
       </HashRouter>
       </router>
     </div>

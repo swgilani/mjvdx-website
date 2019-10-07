@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Image1 from '../../assets/images/cne-wall.jpg';
+import Image1 from '../../assets/images/cne_wall.jpg';
 import LazyHero from 'react-lazy-hero';
 import './Parallax.css';
 import Image2 from '../../assets/images/muneeb.jpg';
@@ -9,6 +9,8 @@ import Image2 from '../../assets/images/muneeb.jpg';
 
 
 const parallax = props => (
+
+
 
     <div className="hello">
     <LazyHero

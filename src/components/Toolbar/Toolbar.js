@@ -4,8 +4,6 @@ import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import { Link } from 'react-router-dom'
 
 
-import { browserHistory } from "react-router";
-
 
 
 
@@ -17,16 +15,6 @@ import { browserHistory } from "react-router";
 
 const toolbar = props => {
 
-    const toLandscapes = () => browserHistory.push("/Landscapes");
-    const toPortraits = () => browserHistory.push("/Portraits");
-    const toWeddings = () => browserHistory.push("/Weddings");
-    const toEvents = () => browserHistory.push("/Events");
-    
-    const toPackages = () => browserHistory.push("/Packages");
-    const toAbout = () => browserHistory.push("/About");
-    const toContact = () => browserHistory.push("/Contact");
-    
-    const toFAQ = () => browserHistory.push("/FAQ");
     
    
 return (

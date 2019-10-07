@@ -1,26 +1,63 @@
 import React, { Component } from 'react'
 import Toolbar from '../../components/Toolbar/Toolbar'
 import Parallax from '../../components/Parallax/AboutP'
-
 import './About.css';
 import ContactForm from '../../components/ContactForm/ContactForm'
 import Footer from '../../components/Footer/Footer'
+import Backdrop from '../../components/Backdrop/Backdrop'
 
+import SideDrawer from '../../components/SideDrawer/SideDrawer'
+import ReactDOM from 'react-dom';
 
 class About extends Component {
+
+
+  state = {
+    sideDrawerOpen: false,
+  }
+
+ 
+
+
+
+  drawerToggleClickHandler = () => {
+    this.setState(prevState => {
+      return { sideDrawerOpen: !prevState.sideDrawerOpen }
+    })
+  }
+
+  backdropClickHandler = () => {
+    this.setState({ sideDrawerOpen: false })
+  }
+
+  componentDidMount(){
+    ReactDOM.findDOMNode(this).scrollIntoView();
+    document.body.classList.add("MainPage");
+    
+
+}
   
     
 
   
 
     render() {
+
+      let backdrop;
+      if (this.state.sideDrawerOpen) {
+        backdrop = <Backdrop click={this.backdropClickHandler} />;
+      }
+  
     
       return (
-
+        
         <div className="backgroundAbout">
 
 <Parallax />
-<Toolbar/>
+<Toolbar drawerClickHandler={this.drawerToggleClickHandler} /> 
+                   
+                   <SideDrawer show={this.state.sideDrawerOpen} />
+                   {backdrop}
 <br/>
 <div className="centerAbout">
 <div className="centeredContainer">
@@ -59,6 +96,7 @@ Some of my recent work can be seen on my facebook and instagram pages.
 <ContactForm/>
 <Footer/>
         </div>
+        
       )
     }
   }
