@@ -21,6 +21,7 @@ import Prom from './Pages/Events/Prom'
 import LoveToronto from './Pages/Events/LoveToronto'
 import BillyBall from './Pages/Events/BillyBall'
 import Baby from './Pages/Events/Baby'
+import Hamza from './Pages/Weddings/Hamza'
 
 
 
@@ -44,7 +45,7 @@ export default function App() {
     <div>
       <router>
         <HashRouter>
-          <Route path='/' exact component={MainPage} />
+          <Route path='/' exact component={Welcome} />
           <Route path='/About' exact component={About} />
           <Route path='/Contact' exact  component={Contact} />
           <Route path='/Events' exact component={Events} />
@@ -63,6 +64,7 @@ export default function App() {
           <Route path='/LoveToronto' exact component={LoveToronto} />
           <Route path='/BillyBall' exact component={BillyBall} />
           <Route path='/Baby' exact component={Baby} />
+          <Route path='/Hamza' exact component={Hamza} />
       </HashRouter>
       </router>
     </div>

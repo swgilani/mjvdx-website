@@ -22,9 +22,9 @@ class Cards extends React.Component {
       
         window.location.assign("https://mjvdx.com/#/Jowayne");
     }
-    events() {
+    hamza() {
 
-        window.location.assign("https://mjvdx.com/#/Events");
+        window.location.assign("https://mjvdx.com/#/Hamza");
     }
     eshoots() {
 
@@ -52,7 +52,7 @@ return (
            
            
             <a onClick={this.saima} className="album-button"> 
-	        SAIMA'S WEDDING</a>
+	        SAIMA & ADNAN</a>
              
          </div>
 
@@ -61,15 +61,15 @@ return (
 
                 
             <a onClick={this.jowayne} className="album-button1">
-            JOWAYNE AND T'S WEDDING</a>
+            JOWAYNE & T</a>
             
     </div>
 
 
     <div className="cardsflexitem">
                 
-            <a onClick={this.events} className="album-button2">
-            EVENTS</a>
+            <a onClick={this.hamza} className="album-button2">
+            HAMZA & NAZNIN</a>
           
     </div>
 

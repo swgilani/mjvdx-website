@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Image1 from '../../assets/images/cne_wall.jpg';
+import Image1 from '../../Pictures/Landscape/q30.jpg';
 import LazyHero from 'react-lazy-hero';
 import './Parallax.css';
 import Image2 from '../../assets/images/muneeb.jpg';
@@ -28,7 +28,7 @@ const parallax = props => (
         </div>
     <div className="aboutflexitem2">
 
-     <h1 className="parallaxh1size1">About me</h1>   
+     <h1 className="parallaxh1size1">ABOUT ME</h1>   
     </div>
 
 

@@ -68,7 +68,7 @@ componentWillUnmount() {
           
 
         <div className="centerPackages">
-        <p>All packages can be custom fitted to your desire. We promise to build a package to fully suit all of your needs!</p>
+        <h2 className="headerp">All packages can be custom fitted to your desire. We promise to build a package to fully suit all of your needs!</h2>
         <br/>
         <br/>
         <div className="packagesflex">
@@ -141,13 +141,13 @@ componentWillUnmount() {
             <div className="epercent">
             <h1 className="boldtext">Silver ($2000)</h1>
             <ul>
-              <li><p>One photographers</p></li>
+              <li><p>One photographer</p></li>
               <li><p>One day event</p></li>
               <li><p>Complimentary e-shoot  (max 60 minutes)</p></li>
               <li><p>Up to 12 hours of wedding coverage, religious ceremonies, décor and reception</p></li>
               <li><p>Onsite photo shoot with bride, groom, family and guests on wedding day</p></li>
               <li><p>Consulting, scheduling prep and briefing session prior to the big day!</p></li>
-              <li><p>All images provided via an online link and a USB- enhanced and professionally editedn</p></li>
+              <li><p>All images provided via an online link and a USB- enhanced and professionally edited</p></li>
               
               
             </ul>  
@@ -168,7 +168,7 @@ componentWillUnmount() {
             <div className="epercent">
             <h1 className="boldtext">Bronze ($1500)</h1>
             <ul>
-              <li><p>One photographers</p></li>
+              <li><p>One photographer</p></li>
               <li><p>One day event</p></li>
               <li><p>Up to 6 hours of wedding coverage, religious ceremonies, décor and reception</p></li>
               <li><p>Onsite photo shoot with bride, groom, family and guests on wedding day</p></li>

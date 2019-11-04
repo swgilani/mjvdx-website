@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
 import './Welcome.css';
+import { Link } from 'react-router-dom'
 
 
 class Welcome extends Component {
@@ -28,7 +29,9 @@ class Welcome extends Component {
            <h1 className="welcomeText">Welcome!</h1>
            <p className="title">Photographer based in Toronto</p>
 
-            <button  onClick={this.onClick}>Enter</button>  
+            <Link to="/MainPage">
+            <button className= "btn-contactwelcome">Enter</button>  
+            </Link>
 		      </div>
 
            

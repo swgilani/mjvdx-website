@@ -50,7 +50,14 @@ import Image48 from '../../Pictures/Portraits/vanessa russo-7-min.jpg';
 import Image49 from '../../Pictures/Portraits/vanessa russo-8-min.jpg';
 import Image50 from '../../Pictures/Portraits/vanessa russo-9-min.jpg';
 import Image51 from '../../Pictures/Portraits/vanessa russo-10-min.jpg';
-import Image52 from '../../Pictures/Portraits/vanessa russo-min.jpg';
+import Image52 from '../../Pictures/Portraits/Protiva-2.jpg';
+import Image53 from '../../Pictures/Portraits/Protiva-3.jpg';
+import Image54 from '../../Pictures/Portraits/Protiva-4.jpg';
+import Image55 from '../../Pictures/Portraits/Rooh-2.jpg';
+import Image56 from '../../Pictures/Portraits/Rooh-3.jpg';
+import Image57 from '../../Pictures/Portraits/Rooh-4.jpg';
+import Image58 from '../../Pictures/Portraits/Rooh.jpg';
+
 
 
 
@@ -321,5 +328,41 @@ export const photos = [
     src: Image52,
     width: 3,
     height: 4
+  }
+  ,
+  {
+    src: Image53,
+    width: 3,
+    height: 4
+  }
+  ,
+  {
+    src: Image54,
+    width: 3,
+    height: 4
+  }
+  ,
+  {
+    src: Image55,
+    width: 3,
+    height: 4
+  }
+  ,
+  {
+    src: Image56,
+    width: 4,
+    height: 3
+  }
+  ,
+  {
+    src: Image57,
+    width: 3,
+    height: 4
+  }
+  ,
+  {
+    src: Image58,
+    width: 4,
+    height: 3
   }
 ];

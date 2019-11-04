@@ -58,7 +58,8 @@ componentWillUnmount() {
 
 
                     <h1 className="colorwhite">COVERAGE</h1>
-                    <h3 className="boldp">Quick Links</h3>
+                    {/*
+                   <h3 className="boldp">Quick Links</h3>
 
 
                     <p><a  href="#C1" >What is your pricing?</a></p>
@@ -72,10 +73,10 @@ componentWillUnmount() {
                     <p><a href="#C9">Do we get to keep the digital files?</a></p>
                     <p><a href="#C10">Do you deliver every image you shoot?</a></p>
                     <p><a href="#C11">Do you come to the rehearsal?</a></p>
+                       <hr/>
+                   */ }
 
-
-
-                        <hr/>
+                       
 
                 <section className="smoothscroll">
 

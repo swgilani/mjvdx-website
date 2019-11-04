@@ -7,10 +7,12 @@
     bottom: 0;
     right: 0;
     overflow: auto;
+    font-family: 'Titillium Web', sans-serif;
     
+    
+    background: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.25) ),url("./welcome_page_pic.jpg") no-repeat center center fixed;
 
-
-    background-image:    url("./welcome_page_pic.jpg");
+    
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;   
@@ -41,7 +43,7 @@
 
 .name {
     font-weight: bold;
-    color: lightgrey;
+    color: white;
     font-size: 25px;
 
 }
@@ -49,6 +51,48 @@
 .welcomeText {
     font-weight: bold;
     color: white;
-    font-size: 100px
+    font-size: 100px;
 }
 
+
+.btn-contactwelcome {
+    
+   
+    font-family: 'Titillium Web', sans-serif;
+   
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 2px 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+
+    background-color:transparent; 
+    color: white; 
+    border: 2px solid#37c8c6;
+    padding: 2px 15px;
+}
+.btn-contactwelcome:hover {
+    
+        background-color: #37c8c6;
+        color: black;
+      
+}
+
+
+
+@media (max-width: 436px) {
+
+    .welcomeText {
+        font-size: 50px;
+    }
+
+
+
+
+
+
+}
