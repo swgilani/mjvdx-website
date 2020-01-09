@@ -37,7 +37,7 @@ import Image31 from '../../Pictures/Landscape/q31.jpg';
 
 
 
-export const photos = [
+export const photos2 = [
   {
     src: Image1,
     width: 3,

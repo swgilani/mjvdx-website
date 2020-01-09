@@ -1,7 +1,8 @@
 import React, { useState, useCallback} from "react";
 
 import Gallery from "react-photo-gallery";
-import { photos } from "./landscapephotos";
+import { photos } from "./landscapephotosSMALL";
+import { photos2 } from "./landscapephotos";
 
 import './PhotosGrid.css'
 import Carousel, { Modal, ModalGateway } from "react-images";
@@ -30,7 +31,7 @@ function PhotosGrid() {
             <Modal onClose={closeLightbox}>
               <Carousel
                 currentIndex={currentImage}
-                views={photos.map(x => ({
+                views={photos2.map(x => ({
                   ...x,
                   srcset: x.srcSet,
                   caption: x.title
