@@ -2,6 +2,8 @@ import React, { useState, useCallback} from "react";
 
 import Gallery from "react-photo-gallery";
 import { photos } from "./PromPhotos"
+import { photos2 } from "./PromPhotosSMALL"
+
 import './PhotosGrid.css'
 import Carousel, { Modal, ModalGateway } from "react-images";
 

@@ -68,7 +68,13 @@ componentWillUnmount() {
           
 
         <div className="centerPackages">
-        <h2 className="headerp">All packages can be custom fitted to your desire. We promise to build a package to fully suit all of your needs!</h2>
+
+        <h1 className="headerp">WEDDING PACKAGES</h1>
+
+        <h5 className="headerp">All packages can be custom fitted to your desire. We promise to build a package to fully suit all of your needs!</h5>
+
+
+
         <br/>
         <br/>
         <div className="packagesflex">
@@ -182,8 +188,114 @@ componentWillUnmount() {
         <br/>
         <hr/>
         <br/>
+
+
+        
+        
+
+          <h1 className="headerp">PORTRAIT/COUPLE SHOOT PACKAGES</h1>
+          <br/>
+
+
+
+         <div className="packagesflex">
+          <div className="pitem1">
+            <img src={Image1} alt="muskaan"></img>
+          </div>
+          <div className="pitem2">
+
+
+            <div className="epercent">
+            <h1 className="boldtext">Gold ($500)</h1>
+            <ul>
+              <li><p>3 hours of shooting time</p></li>
+              <li><p>Consultation/prep before the shoot </p></li>
+              <li><p>300+ images all colour corrected </p></li>
+              <li><p>Online Photo Delivery within two weeks</p></li>
+              <li><p>Up to 5 different outfits</p></li>
+              <li><p>Two locations </p></li>
+              <li><p>5 Fantasy/Surreal edits included! </p></li>
+            </ul>  
+          </div>
+          </div>
+        </div>
+        <br/>
+        <hr/>
+        <br/>
+
+
+          <div className="packagesflex">
+          <div className="pitem1">
+            <img src={Image1} alt="muskaan"></img>
+          </div>
+          <div className="pitem2">
+
+
+            <div className="epercent">
+            <h1 className="boldtext">Silver ($400)</h1>
+            <ul>
+              <li><p>2 hours of shooting time</p></li>
+              <li><p>Consultation/prep before the shoot </p></li>
+              <li><p>150+ images all colour corrected </p></li>
+              <li><p>Online Photo Delivery within two weeks</p></li>
+              <li><p>Up to 5 different outfits</p></li>
+              <li><p>One locations </p></li>
+            </ul>  
+          </div>
+          </div>
+        </div>
+        <br/>
+        <hr/>
+        <br/>
+
+          <div className="packagesflex">
+          <div className="pitem1">
+            <img src={Image1} alt="muskaan"></img>
+          </div>
+          <div className="pitem2">
+
+
+            <div className="epercent">
+            <h1 className="boldtext">Bronze ($250)</h1>
+            <ul>
+              <li><p>1 hours of shooting time</p></li>
+              <li><p>Consultation/prep before the shoot </p></li>
+              <li><p>75+ images all colour corrected </p></li>
+              <li><p>Online Photo Delivery within two weeks</p></li>
+              <li><p>Up to 3 different outfits</p></li>
+              <li><p>One locations </p></li>
+            </ul>  
+          </div>
+          </div>
+        </div>
+        <br/>
+        <hr/>
+        <br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
           <br/>
+
+
+
+
+
+
+          
           <ContactForm/>
           <Footer/>
         </div>

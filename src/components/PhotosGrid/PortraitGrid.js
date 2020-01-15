@@ -2,6 +2,7 @@ import React, { useState, useCallback} from "react";
 
 import Gallery from "react-photo-gallery";
 import { photos } from "./portraitsphotos";
+import { photos2 } from "./portraitphotosSMALL";
 
 import './PhotosGrid.css'
 import Carousel, { Modal, ModalGateway } from "react-images";
@@ -27,7 +28,7 @@ function PhotosGrid() {
     return (
       <div className="middlePhotos">
          <LazyLoad height={1000} once >
-        <Gallery photos={photos} onClick={openLightbox} className="photohover" />
+        <Gallery photos={photos2} onClick={openLightbox} className="photohover" />
         </LazyLoad>
         <ModalGateway>
           {viewerIsOpen ? (
