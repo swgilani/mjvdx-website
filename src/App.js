@@ -15,6 +15,7 @@ import Weddings from './Pages/Weddings/Weddings';
 import Saima from './Pages/Weddings/Saima'
 import Jowayne from './Pages/Weddings/Jowayne'
 import Sarah from './Pages/Weddings/Sarah'
+import Maryam from './Pages/Weddings/Maryam'
 import Eshoots from './Pages/Weddings/Eshoots'
 import FAQ from './Pages/FAQ/FAQ'
 import Prom from './Pages/Events/Prom'
@@ -49,7 +50,7 @@ export default function App() {
           <Route path='/About' exact component={About} />
           <Route path='/Contact' exact  component={Contact} />
           <Route path='/Events' exact component={Events} />
-          
+  
           <Route path='/Landscapes' exact component={Landscapes} />
           <Route path='/Packages' exact component={Packages} />
           <Route path='/Portraits' exact component={Portraits} />
@@ -65,6 +66,8 @@ export default function App() {
           <Route path='/BillyBall' exact component={BillyBall} />
           <Route path='/Baby' exact component={Baby} />
           <Route path='/Hamza' exact component={Hamza} />
+          <Route path='/Maryam' exact component={Maryam} />
+
       </HashRouter>
       </router>
     </div>

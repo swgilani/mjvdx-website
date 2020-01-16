@@ -4,7 +4,7 @@ import SideDrawer from '../../components/SideDrawer/SideDrawer'
 import Backdrop from '../../components/Backdrop/Backdrop'
 import Cards from '../../components/Cards/Cards'
 import Parallax from '../../components/Parallax/WeddingsP'
-
+import PhotosGrid from '../../components/PhotosGrid/SaimaGrid'
 import ContactForm from '../../components/ContactForm/ContactForm'
 import Footer from '../../components/Footer/Footer'
 
@@ -58,7 +58,7 @@ componentWillUnmount() {
     return (
       <div>
            <Parallax/>
-      
+   
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} /> 
                    
         <SideDrawer show={this.state.sideDrawerOpen} />
@@ -66,18 +66,16 @@ componentWillUnmount() {
 
       <br/>
       
-    
+    <PhotosGrid/>    
       
 
 
       <br/>
       <Cards/>
       <br/>
-      
-     
-  
-
-
+      <br/>
+      <br/>
+      <br/>
 
       
 

@@ -31,6 +31,10 @@ class Cards extends React.Component {
         window.location.assign("https://www.mjvdx.com/#/eshoots");
     }
 
+    maryam() {
+        window.location.assign("https://www.mjvdx.com/#/maryam");
+    }
+
 
       render() {
 
@@ -72,6 +76,14 @@ return (
             HAMZA & NAZNIN</a>
           
     </div>
+
+
+    <div className="cardsflexitem">
+                
+                <a onClick={this.maryam} className="album-button2">
+                MARYAM & AAQIB</a>
+              
+        </div>
 
 
 

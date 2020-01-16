@@ -5,6 +5,8 @@
 
 }
 
+
+
 .headerp {
     color: white;
 }
@@ -46,6 +48,12 @@
     height: auto;
     width: 800px;
  }
+
+ .pitemnew img {
+    height: auto;
+    width: 800px;
+ }
+
 .pitem2 {
     flex: 3;
     

@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
+import { HashLink as Link } from 'react-router-hash-link';
+
 import Toolbar from '../../components/Toolbar/Toolbar'
 import Parallax from '../../components/Parallax/PackagesP'
 import Image1 from '../../assets/packagesPhotos/image1.jpg';
 import Image2 from '../../assets/packagesPhotos/image2.jpg';
 import Image3 from '../../assets/packagesPhotos/image3.jpeg';
 import Image4 from '../../assets/packagesPhotos/image4new.jpg';
+import Image5 from '../../assets/packagesPhotos/a1.jpg';
+import Image6 from '../../assets/packagesPhotos/a2.jpg';
+import Image7 from '../../assets/packagesPhotos/a3.jpg';
+
 import './Packages.css';
 import ContactForm from '../../components/ContactForm/ContactForm'
 import Footer from '../../components/Footer/Footer'
@@ -68,6 +74,8 @@ componentWillUnmount() {
           
 
         <div className="centerPackages">
+
+        <Link to="/#Packages#portrait">PLS WORK</Link>
 
         <h1 className="headerp">WEDDING PACKAGES</h1>
 
@@ -192,15 +200,16 @@ componentWillUnmount() {
 
         
         
-
-          <h1 className="headerp">PORTRAIT/COUPLE SHOOT PACKAGES</h1>
+          <div id="portrait">
+          <h1 className="headerp" >PORTRAIT/COUPLE SHOOT PACKAGES</h1>
+          </div>
           <br/>
 
 
 
          <div className="packagesflex">
           <div className="pitem1">
-            <img src={Image1} alt="muskaan"></img>
+            <img src={Image5} alt="muskaan"></img>
           </div>
           <div className="pitem2">
 
@@ -226,7 +235,7 @@ componentWillUnmount() {
 
           <div className="packagesflex">
           <div className="pitem1">
-            <img src={Image1} alt="muskaan"></img>
+            <img src={Image6} alt="muskaan"></img>
           </div>
           <div className="pitem2">
 
@@ -250,7 +259,7 @@ componentWillUnmount() {
 
           <div className="packagesflex">
           <div className="pitem1">
-            <img src={Image1} alt="muskaan"></img>
+            <img src={Image7} alt="muskaan"></img>
           </div>
           <div className="pitem2">
 

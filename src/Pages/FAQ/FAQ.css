@@ -29,7 +29,9 @@ a.highlight {
     color: #d8dee5;
 }
 
-.smoothscroll {
+html {
     scroll-behavior: smooth;
 }
+
+
 
