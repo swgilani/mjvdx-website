@@ -32,7 +32,7 @@ class Cards extends React.Component {
     }
 
     maryam() {
-        window.location.assign("https://www.mjvdx.com/#/maryam");
+        window.location.assign("https://www.mjvdx.com/#/Maryam");
     }
 
 
@@ -80,7 +80,7 @@ return (
 
     <div className="cardsflexitem">
                 
-                <a onClick={this.maryam} className="album-button2">
+                <a onClick={this.maryam} className="album-button4">
                 MARYAM & AAQIB</a>
               
         </div>

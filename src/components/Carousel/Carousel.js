@@ -29,16 +29,12 @@ const carousel = props => (
      
     
   
-      <img alt="" className="sizeImg" src={Image6}/>
+     
       
       <img alt="" className="sizeImg" src={Image3}/>
       <img alt="" className="sizeImg" src={Image4}/>
       <img alt="" className="sizeImg" src={Image7}/>
       <img alt="" className="sizeImg" src={Image5}/>
-      <img alt="" className="sizeImg" src={Image9}/>
-      <img alt="" className="sizeImg" src={Image8}/>
-     
-  
       <img alt="" className="sizeImg" src={Image2}/>
 
     </Flickity>

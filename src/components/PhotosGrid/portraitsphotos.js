@@ -323,46 +323,6 @@ export const photos = [
     src: Image51,
     width: 3,
     height: 4
-  },
-  {
-    src: Image52,
-    width: 3,
-    height: 4
   }
-  ,
-  {
-    src: Image53,
-    width: 3,
-    height: 4
-  }
-  ,
-  {
-    src: Image54,
-    width: 3,
-    height: 4
-  }
-  ,
-  {
-    src: Image55,
-    width: 3,
-    height: 4
-  }
-  ,
-  {
-    src: Image56,
-    width: 4,
-    height: 3
-  }
-  ,
-  {
-    src: Image57,
-    width: 3,
-    height: 4
-  }
-  ,
-  {
-    src: Image58,
-    width: 4,
-    height: 3
-  }
+  
 ];

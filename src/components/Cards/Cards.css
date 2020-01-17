@@ -87,6 +87,25 @@ box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
    
 }
 
+.album-button4 {
+	width: 230px;
+    height: 70px;
+    
+    overflow: hidden;
+    background-image: url('../../Pictures/Weddings/MaryamSMALL/a11.jpg') !important;
+	display:inline-block;
+    font-size: 24px;
+    color:#FFFFFF;
+    text-align:center;
+    padding-top:170px;
+    text-decoration:none;
+    background-size: cover;
+    -webkit-box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
+   
+}
+
 
 
 .album-button:hover {
@@ -123,6 +142,18 @@ box-shadow: 10px 10px 13px 2px rgba(0,0,0,0.75);
     color:#000000;
 }
 .album-button3:hover {
+
+	background-size:cover;
+	transform: scale(1.1);
+	-webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -o-transition: 400ms;
+    -ms-transition: 400ms;
+    transition: 400ms;
+    color:#000000;
+}
+
+.album-button4:hover {
 
 	background-size:cover;
 	transform: scale(1.1);

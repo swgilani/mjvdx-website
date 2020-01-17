@@ -63,7 +63,7 @@ componentWillUnmount() {
         <div className="backgroundPackages">
 
           <Parallax />
-      =
+      
           <Toolbar drawerClickHandler={this.drawerToggleClickHandler} /> 
                    
                    <SideDrawer show={this.state.sideDrawerOpen} />
@@ -75,11 +75,19 @@ componentWillUnmount() {
 
         <div className="centerPackages">
 
-        <Link to="/#Packages#portrait">PLS WORK</Link>
+          <br/>
+          <h4 className="headerp">All packages can be custom fitted to your desire. We promise to build a package to fully suit all of your needs!</h4>
+          <h4 className="headerp">Looking for wedding packages? <Link style={{color:"#add8e6"}}  smooth to="/Packages#weddingpackages"> Click here!</Link></h4>
+          <h4 className="headerp">Looking for portrait/couple shoot packages?<Link style={{color:"#add8e6"}} smooth to="/Packages#portrait"> Click here!</Link></h4>
 
+
+
+        <hr/>
+        <div id="weddingpackages">
         <h1 className="headerp">WEDDING PACKAGES</h1>
+        </div>
 
-        <h5 className="headerp">All packages can be custom fitted to your desire. We promise to build a package to fully suit all of your needs!</h5>
+      
 
 
 
@@ -278,7 +286,7 @@ componentWillUnmount() {
           </div>
         </div>
         <br/>
-        <hr/>
+        
         <br/>
 
 
