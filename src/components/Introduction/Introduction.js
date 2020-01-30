@@ -22,7 +22,7 @@ const introduction = props => {
        
        <div className="intro-box2">
               <h1 className="coloredLol">Hi, I'm Muneeb!</h1>
-              <h2 className="coloredLol">I am a photographer based in Toronto, Canada</h2>
+              <h2 className="coloredLol">I'm a photographer based in Toronto, Canada</h2>
            <Link to='About'> <button className="btn-knowme" >ABOUT ME</button></Link>
        </div>
 

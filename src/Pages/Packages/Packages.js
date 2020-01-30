@@ -76,7 +76,7 @@ componentWillUnmount() {
         <div className="centerPackages">
 
           <br/>
-          <h4 className="headerp">All packages can be custom fitted to your desire. We promise to build a package to fully suit all of your needs!</h4>
+          <h4 className="headerp">All packages can be custom fitted to your desire. I promise to build a package to fully suit all of your needs!</h4>
           <h4 className="headerp">Looking for wedding packages? <Link style={{color:"#add8e6"}}  smooth to="/Packages#weddingpackages"> Click here!</Link></h4>
           <h4 className="headerp">Looking for portrait/couple shoot packages?<Link style={{color:"#add8e6"}} smooth to="/Packages#portrait"> Click here!</Link></h4>
 
@@ -256,7 +256,7 @@ componentWillUnmount() {
               <li><p>150+ images all colour corrected </p></li>
               <li><p>Online Photo Delivery within two weeks</p></li>
               <li><p>Up to 5 different outfits</p></li>
-              <li><p>One locations </p></li>
+              <li><p>One location </p></li>
             </ul>  
           </div>
           </div>
@@ -280,7 +280,7 @@ componentWillUnmount() {
               <li><p>75+ images all colour corrected </p></li>
               <li><p>Online Photo Delivery within two weeks</p></li>
               <li><p>Up to 3 different outfits</p></li>
-              <li><p>One locations </p></li>
+              <li><p>One location </p></li>
             </ul>  
           </div>
           </div>
